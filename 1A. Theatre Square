@@ -1,0 +1,26 @@
+http://codeforces.com/problemset/problem/1/A
+
+Theatre Square in the capital city of Berland has a rectangular shape with the size n × m meters. On the occasion of the city's anniversary, a decision was taken to pave the Square with square granite flagstones. Each flagstone is of the size a × a.
+
+What is the least number of flagstones needed to pave the Square? It's allowed to cover the surface larger than the Theatre Square, but the Square has to be covered. It's not allowed to break the flagstones. The sides of flagstones should be parallel to the sides of the Square.
+
+
+
+import java.util.*;
+import java.io.*;
+
+public class TheatreSquare{
+  public static void main(String args[]) throws IOException{
+    Scanner input = new Scanner(System.in);
+      long n=input.nextLong();
+      long m=input.nextLong();
+      long a=input.nextLong();
+      
+      long x =  m/a;
+      long y = n/a;
+      if(m%a!=0) x++;
+      if(n%a!=0) y++;
+      
+    System.out.println(x*y);
+  }
+ }
