@@ -1,0 +1,15 @@
+
+import java.util.*;
+import java.io.*;
+
+public class TheatreSquare{
+  public static void main(String args[]) throws IOException{
+    Scanner input = new Scanner(System.in);
+      long n=input.nextLong(); 
+ 
+      if(n%2!=0 || n<=2 ) System.out.println("NO");
+      else if(n%2!=1) System.out.println("YES");
+      
+    
+  }
+ }
